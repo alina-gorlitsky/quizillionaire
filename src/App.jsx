@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Quiz from './components/quiz';
 
 class App extends Component {
   constructor(props) {
@@ -28,7 +29,14 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <div className='Main'>main</div>
+        <div className='Main'>
+          <div className='MainTop'>
+            <div className='Timer'>60</div>
+          </div>
+          <div className='MainBottom'>
+            <Quiz />
+          </div>
+        </div>
         <div className='LevelsContainer'>
           <ul className='Levels'>
             {this.levels.map((level) => (
