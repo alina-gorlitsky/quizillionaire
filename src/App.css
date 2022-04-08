@@ -1,4 +1,4 @@
-.App {
+g.App {
   height: 100vh;
   display: flex;
   background-color: #192537;
@@ -82,6 +82,48 @@
 
 .Answer.active {
   background: rgba(176, 159, 130, 0.8);
+}
+
+.Answer.correct {
+  animation: correct 3s ease forwards;
+}
+
+@keyframes correct {
+  0%,
+  22%,
+  42% {
+    background: rgba(176, 159, 130, 0.8)
+  }
+  20%,
+  40%,
+  60% {
+    background: linear-gradient(#4d545e, #425269);
+  }
+  62%,
+  100% {
+    background: rgb(64, 145, 64);
+  }
+}
+
+.Answer.incorrect {
+  animation: incorrect 3s ease forwards;
+}
+
+@keyframes incorrect {
+  0%,
+  22%,
+  42% {
+    background: rgba(176, 159, 130, 0.8)
+  }
+  20%,
+  40%,
+  60% {
+    background: linear-gradient(#4d545e, #425269);
+  }
+  62%,
+  100% {
+    background: rgb(196, 62, 62);
+  }
 }
 
 .LevelsContainer {
