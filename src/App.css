@@ -1,4 +1,4 @@
-g.App {
+.App {
   height: 100vh;
   display: flex;
   background-color: #192537;
@@ -122,7 +122,7 @@ g.App {
   }
   62%,
   100% {
-    background: rgb(196, 62, 62);
+    background: rgb(208, 76, 76);
   }
 }
 
