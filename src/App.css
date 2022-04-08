@@ -9,6 +9,79 @@
 .Main {
   width: 75%;
   background: url(./assets/Quizillionaire.png) center;
+  display: flex;
+  flex-direction: column;
+}
+
+.MainTop {
+  height: 50%;
+  position: relative;
+}
+
+.Timer {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 300;
+  position: absolute;
+  bottom: 10px;
+  left: 48%;
+}
+
+.MainBottom {
+  height: 50%;
+}
+
+.QuizContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Question {
+  width: 80%;
+  background: linear-gradient(#425269, #192537);
+  border: 2px solid #e9e9e9;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.Answers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Answer {
+  width: 40%;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(#4d545e, #425269);
+  border: 1px solid #e9e9e9;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 10px 20px 10px;
+  cursor: pointer;
+}
+
+.Answer:hover {
+  background: rgba(176, 159, 130, 0.5);
+}
+
+.Answer.active {
+  background: rgba(176, 159, 130, 0.8);
 }
 
 .LevelsContainer {
@@ -32,7 +105,7 @@
 }
 
 .LevelsItem.active {
-  background-color: hsl(38, 23%, 60%, 50%);
+  background-color: rgba(176, 159, 130, 0.5);
 }
 
 .LevelsItemNumber {
